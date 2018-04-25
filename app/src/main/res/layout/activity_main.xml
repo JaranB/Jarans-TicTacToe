@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaran.jaranstictactoe.no.example.jaran.jaranstictactoe.MainActivity">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Velkommen til JaransTicTacToe! \n Velg ønsket spillmodus:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/enspillerChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Enspiller" />
+
+        <CheckBox
+            android:id="@+id/flerspillerChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flerspiller" />
+
+    </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/playerOneName"
+            android:text=""
+            android:layout_below="@+id/LinearLayout1"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:visibility="visible"
+            android:hint="Skriv inn navn på spiller en"/>
+
+        <EditText
+            android:layout_below="@+id/playerOneName"
+            android:text=""
+            android:id="@+id/playerTwoName"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:visibility="invisible"
+            android:hint="Skriv inn navn på spiller to" />
+
+
+        <Button
+            android:layout_below="@+id/playerTwoName"
+            android:id="@+id/playBtn"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Start spill" />
+
+        <Button
+            android:layout_below="@+id/playBtn"
+            android:id="@+id/leaderboardsBtn"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Resultathistorikk" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@+id/leaderboardsBtn"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Trykk på knappen under for å logge inn med facebook, eller skriv inn ett brukernavn ovenfor!"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_below="@+id/textView2"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

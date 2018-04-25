@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaran.jaranstictactoe.no.example.jaran.jaranstictactoe.UserInfo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelativeLayout1"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/usernameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Username" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/winsTxt"
+            android:layout_below="@+id/shareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:text="Runder vunnet: " />
+
+        <TextView
+            android:id="@+id/roundsplayedTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/winsTxt"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+            android:text="Runder spilt: " />
+
+        <TextView
+            android:id="@+id/rankingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/roundsplayedTxt"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+            android:text="Spillers rangering: " />
+
+    </RelativeLayout>
+
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/shareBtn"
+        android:layout_width="300dp"
+        android:layout_below="@+id/RelativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Del resultater på facebook!" />
+</RelativeLayout>
